@@ -1,0 +1,32 @@
+// Global style
+$color--bg: #0E111B;
+$color--bg-90: rgba($color--bg, .9);
+$color--bg-70: rgba($color--bg, .7);
+$color--bg-50: rgba($color--bg, .5);
+
+$color--text: #FFF;
+$color--text-60: rgba($color--text, .6);
+$color--text-50: rgba($color--text, .5);
+$color--text-30: rgba($color--text, .3);
+$color--text-10: rgba($color--text, .1);
+$color--text-5: rgba($color--text, .05);
+
+$color--primary: #FDC000;
+$color--area: #1C212E;
+
+// @media all and (max-width: 1980px) { STYLES }
+$tablet: "all and (max-width: 1200px)";
+$mobile: "all and (max-width: 720px)";
+
+.container {
+    position: relative;
+    max-width: 1120px;
+    margin:0 auto;
+    padding: 40px 0 0;
+    @media #{$tablet} {
+        padding: 40px 40px 0;
+    }
+    @media #{$mobile} {
+        padding: 40px 20px 0;
+    }
+}
